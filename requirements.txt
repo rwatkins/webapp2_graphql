@@ -1,0 +1,3 @@
+gunicorn==21.2.0
+strawberry-graphql==0.203.1
+webapp2==3.0.0b1
