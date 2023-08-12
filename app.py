@@ -121,7 +121,7 @@ class GraphQLView(
         return self.response
 
 
-app = WSGIApplication(
+application = WSGIApplication(
     [
         Route("/", RedirectHandler, defaults={"_uri": "/graphql"}),
         Route("/graphql<:/?>", GraphQLView),
