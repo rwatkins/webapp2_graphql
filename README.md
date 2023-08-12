@@ -20,4 +20,6 @@ $ gunicorn app
 
 ## Try it
 
-Visit [http://localhost:8000/graphql].
+Load up GraphiQL at [http://localhost:8000/graphql](http://localhost:8000/graphql).
+
+<img src="https://github.com/rwatkins/webapp2_graphql/raw/main/graphiql.png">
