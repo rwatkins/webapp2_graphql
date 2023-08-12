@@ -93,7 +93,10 @@ class GraphQLView(
     def __init__(self, request, response):
         RequestHandler.__init__(self, request, response)
         BaseGraphQLView.__init__(
-            self, schema=schema, graphiql=True, allow_queries_via_get=True
+            self,
+            schema=schema,
+            graphiql=True,
+            allow_queries_via_get=self.allow_queries_via_get,
         )
 
     def get(self, *args, **kwargs):
